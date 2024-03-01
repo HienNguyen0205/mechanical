@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	display: inline-block;
+	text-decoration: none !important;
+	color: inherit;
+}
+
+.me-2px {
+	margin-right: 2px !important;
+}
+
+.header {
+	height: 80px;
+	padding: 12px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_icon_container{
+	display: flex;
+	width: 120px;
+	justify-content: space-around;
+}
+
+.header_icon {
+	width: 28px;
+	height: 28px;
+	filter: drop-shadow(0 0 6px #666666);
+	opacity: .5;
+	transition: all .3s;
+}
+
+.header_icon:hover{
+	transform: scale(1.1);
+}
+
+.header_icon-active {
+	opacity: 1;
+}
+
+.main_nav {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	height: 48px;
+	background-color: #0d6efd;
+	box-shadow: 0 0 12px #ccc;
+}
+
+.nav_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	flex: 1 1 20%;
+	font-weight: 600;
+	font-size: 15px;
+	border-left: 1px solid #cccccc;
+	color: #ffffff;
+	transition: all .3s ease;
+	text-align: center;
+}
+
+.nav_item:first-child{
+	border-top-left-radius: 4px;
+	border: none;
+}
+
+.nav_item:last-child{
+	border-top-right-radius: 4px;
+}
+
+.nav_item-active{
+	background-color: #ffffff;
+	color: #000;
+}
+
+.nav_item:hover{
+	background-color: #ffffff;
+	color: #000;
+}
+
+#footer {
+	background-image: url('../images/bg/welding.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer_container{
+	padding: 32px 0 18px 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 24px;
+	grid-row-gap: 0px;
+	color: #ffffff;
+}
+
+.footer_logo{
+	width: 80%;
+	height: auto;
+}
+
+.footer_nav{
+	padding: 32px 0;
+	height: 40px;
+	color: #ffffff;
+}
+
+.footer_nav_item-active{
+	color: orange
+}
+
+.footer_nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_nav a, .sub_footer a {
+	padding: 0 18px;
+	border-left: 1px solid #cccccc;
+	transition: all .3s;
+}
+
+.footer_nav a:hover{
+	opacity: .8;
+}
+
+.footer_nav a:first-child, .sub_footer a:first-child {
+	border: none;
+}
+
+.sub_footer{
+	height: 52px;
+	background-color: #222222;
+	color: #fff;
+	border-top: 1px solid #666666;
+}
+
+.banner_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	background-image: url('../images/banner/Top-Banner.webp');
+	background-repeat: none;
+	background-size: contain;
+}
+
+.banner_container h1{
+	color: #ffffff;
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.title_decoration {
+	position: relative;
+	display: inline-block;
+}
+
+.title_decoration::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	height: 3px;
+	width: 120%;
+	background-color: blueviolet;
+	border-radius: 3px;
+}
