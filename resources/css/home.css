@@ -115,21 +115,3 @@
 .features_item:hover{
     transform: scale(103%);
 }
-
-.contact_container{
-    padding: 12px;
-    background-color: #316792;
-    height: 80px;
-}
-
-.contact_inner_container{
-    border: 2px solid #cccccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.contact_inner_container button {
-    color: #316792
-}

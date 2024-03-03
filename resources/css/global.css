@@ -117,7 +117,8 @@ a{
 }
 
 .nav_item:hover{
-	background-color: #ffffff;
+	background-color: #E3F6F5;
+	letter-spacing: .75px;
 	color: #000;
 }
 
@@ -209,4 +210,22 @@ a{
 	width: 120%;
 	background-color: blueviolet;
 	border-radius: 3px;
+}
+
+.contact_container{
+    padding: 12px;
+    background-color: #316792;
+    height: 80px;
+}
+
+.contact_inner_container{
+    border: 2px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact_inner_container button {
+    color: #316792
 }
