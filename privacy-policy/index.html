@@ -10,7 +10,7 @@
     <meta name="author" content="shinzen">
     <meta property="og:title" content="Shinzen - Sản phẩm cơ khí chất lượng">
     <meta property="og:description" content="Đối tác đáng tin cậy trong lĩnh vực cơ khí, cung cấp sản phẩm chất lượng cao.">
-    <meta property="og:image" content="URL_hình_ảnh_minh_hoạ">
+    <meta property="og:image" content="../resources/images/logo/logo.png">
     <meta property="og:url" content="URL_trang_web_cua_ban">
     <title>Cơ khí Shinzen | Chính Sách Bảo Mật</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../resources/images/logo/apple-touch-icon.png">
@@ -32,7 +32,11 @@
             <a href="../" title="shinzenmechanical">
                 <img class="h-100 w-auto" src="../resources/images/logo/logo.png" alt="logo">
             </a>
-            <div class="d-flex align-items-center">
+            <div class="nav_icon_wrap">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" style="display: none;"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center sub_nav_container">
                 <div class="btn-group me-3" role="group" aria-label="contact">
                     <a href="mailto:shinzenmechanical.info@gmail.com" class="btn btn-primary me-2px"
                         target="_blank">shinzenmechanical.info@gmail.com</a>
@@ -50,6 +54,28 @@
                     </a>
                 </div>
             </div>
+            <nav class="hidden_nav">
+                <ul class="h-100 p-4">
+                    <a class="hidden_nav_item" href="../">
+                        <li>Trang Chủ</li>
+                    </a>
+                    <a class="hidden_nav_item" href="../services/">
+                        <li>Dịch Vụ</li>
+                    </a>
+                    <a class="hidden_nav_item" href="../product-showcases/">
+                        <li>Sản Phẩm</li>
+                    </a>
+                    <a class="hidden_nav_item" href="../about-us/">
+                        <li>Giới Thiệu</li>
+                    </a>
+                    <a class="hidden_nav_item" href="../about-factory/">
+                        <li>Nhà Máy</li>
+                    </a>
+                    <a class="hidden_nav_item" href="../recruitment-contact/">
+                        <li>Tuyển Dụng & Liên Hệ</li>
+                    </a>
+                </ul>
+            </nav>
         </header>
         <nav class="main_nav">
             <ul class="d-flex h-100">
@@ -119,45 +145,50 @@
     <footer id="footer" class="mt-5">
         <div class="container">
             <div class="footer_container">
-                <a href="../" title="shinzenmechanical">
+                <a class="d-flex justify-content-center mb-3" href="../" title="shinzenmechanical">
                     <img class="footer_logo" src="../resources/images/logo/logo.png" alt="logo" loading="lazy">
                 </a>
-                <div>
-                    <p class="lh-base">Địa chỉ: Số 36 Khu Garland - Phước Điền, 72 Dương Đình Hội, Phường Phước Long B, TP.Thủ Đức, TP.HCM</p>
+                <div class="mb-3">
+                    <p class="lh-base">Địa chỉ: Số 88 Đường Liên Khu 1-2, Tổ 25, Xã Vĩnh Lộc B, Bình Chánh, HCM</p>
                 </div>
-                <div>
-                    <p><span class="fw-semibold lh-base">Email</span>: cokhinhatnam.info@gmail.com</p>
+                <div class="mb-3">
+                    <p><span class="fw-semibold lh-base">Email</span>: shinzenmechanical.info@gmail.com</p>
                     <p><span class="fw-semibold lh-base">Điện thoại</span>: 0888828825</p>
                     <p><span class="fw-semibold lh-base">Mã số thuế</span>: 0313681357</p>
                 </div>
             </div>
             <div class="footer_nav">
-                <ul>
-                    <a href="../"><li>Trang Chủ</li></a>
-                    <a href="../services/"><li>Dịch Vụ</li></a>
-                    <a href="../product-showcases/"><li>Sản Phẩm</li></a>
-                    <a href="../about-us/"><li>Giới Thiệu</li></a>
-                    <a href="../about-factory/"><li>Nhà Máy</li></a>
-                    <a href="../recruitment-contact/"><li>Tuyển Dụng & Liên Hệ</li></a>
+                <ul class="d-flex justify-content-center flex-wrap">
+                    <a class="lh-base mx-1" href="../"><li>Trang Chủ</li></a>
+                    <a class="lh-base mx-1" href="../services/"><li>Dịch Vụ</li></a>
+                    <a class="lh-base mx-1" href="../product-showcases/"><li>Sản Phẩm</li></a>
+                    <a class="lh-base mx-1" href="../about-us/"><li>Giới Thiệu</li></a>
+                    <a class="lh-base mx-1" href="../about-factory/"><li>Nhà Máy</li></a>
+                    <a class="lh-base mx-1" href="../recruitment-contact/"><li>Tuyển Dụng & Liên Hệ</li></a>
                 </ul>
             </div>
         </div>
     </footer>
     <div class="sub_footer">
-        <div class="container h-100">
-            <div class="d-flex h-100 justify-content-between align-items-center">
-                <p>© Shinzen Mechanical</p>
-                <ul>
-                    <a href="./"><li>Điều khoản sử dụng</li></a>
-                    <a href="./"><li>Quyền riêng tư</li></a>
-                    <a href="./"><li>Chính sách cookie</li></a>
-                </ul>
-            </div>
+        <div class="d-flex h-100 justify-content-md-between align-items-center flex-wrap">
+            <p class="flex_mb_grow-1 text_mb-center mb-3">© Shinzen Mechanical</p>
+            <ul class="d-flex">
+                <a class="text-center" href="./">
+                    <li>Điều khoản sử dụng</li>
+                </a>
+                <a class="text-center" href="./">
+                    <li>Quyền riêng tư</li>
+                </a>
+                <a class="text-center" href="./">
+                    <li>Chính sách cookie</li>
+                </a>
+            </ul>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="../resources/js/main.js"></script>
 </body>
 
 </html>

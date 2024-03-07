@@ -56,6 +56,22 @@ a{
 	padding: 12px 0;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+}
+
+.header_logo {
+	height: 56px;
+	width: 200px;
+}
+
+.nav_icon_wrap{
+	display: none;
+	width: 56px;
+	height: 56px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 24px;
 }
 
 .header_icon_container{
@@ -131,7 +147,7 @@ a{
 .footer_container{
 	padding: 32px 0 18px 0;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
 	grid-column-gap: 24px;
 	grid-row-gap: 0px;
@@ -139,13 +155,12 @@ a{
 }
 
 .footer_logo{
-	width: 80%;
+	width: 60%;
 	height: auto;
 }
 
 .footer_nav{
-	padding: 32px 0;
-	height: 40px;
+	padding: 24px 0;
 	color: #ffffff;
 }
 
@@ -174,7 +189,7 @@ a{
 }
 
 .sub_footer{
-	height: 52px;
+	padding: 12px 0;
 	background-color: #222222;
 	color: #fff;
 	border-top: 1px solid #666666;
@@ -194,6 +209,7 @@ a{
 	color: #ffffff;
 	font-size: 48px;
 	font-weight: 600;
+	text-align: center;
 }
 
 .title_decoration {
@@ -207,7 +223,7 @@ a{
 	left: 0;
 	bottom: -8px;
 	height: 3px;
-	width: 120%;
+	width: 100%;
 	background-color: blueviolet;
 	border-radius: 3px;
 }
@@ -215,7 +231,6 @@ a{
 .contact_container{
     padding: 12px;
     background-color: #316792;
-    height: 80px;
 }
 
 .contact_inner_container{
@@ -224,8 +239,77 @@ a{
     justify-content: center;
     align-items: center;
     height: 100%;
+	padding: 12px;
+	font-size: 18px;
 }
 
 .contact_inner_container button {
     color: #316792
+}
+
+.sticky_wrap {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 24px;
+}
+
+.fs-18px {
+	font-size: 18px;
+}
+
+.w-fit {
+	width: fit-content;
+}
+
+.hidden_nav{
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 999;
+	background-color: #000;
+}
+
+.hidden_nav_item {
+	padding: 16px 0;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	font-size: 18px;
+	color: #fff;
+}
+
+.hidden_nav_item-active {
+	color: #0d6efd;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav_icon_wrap{
+		display: flex;
+	}
+	.sub_nav_container{
+		display: none !important;
+	}
+	.main_nav{
+		display: none;
+	}
+	.footer_container{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, );
+		grid-column-gap: 24px;
+		grid-row-gap: 0px;
+		justify-content: center;
+	}
+	.footer_nav a{
+		background-color: #0d6efd;
+		margin: 12px;
+		padding: 12px;
+	}
+	.flex_mb_grow-1{
+		flex-grow: 1;
+	}
+	.text_mb-center{
+		text-align: center;
+	}
+	.banner_container h1{
+		font-size: 40px;
+	}
 }
