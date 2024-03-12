@@ -84,7 +84,7 @@
     font-size: 14px;
 }
 
-.services_item button {
+.services_item a {
     position: absolute;
     left: calc(50% - 50px);
     bottom: 12px;
